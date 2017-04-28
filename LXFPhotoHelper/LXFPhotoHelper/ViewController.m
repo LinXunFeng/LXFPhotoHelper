@@ -51,9 +51,6 @@
     }]];
     [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
     
-    
-    [self performSelector:@selector(sdfd) withObject:nil afterDelay:0];
-    
     // 弹出
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
@@ -61,7 +58,7 @@
 - (void)getSourceWithSourceType:(UIImagePickerControllerSourceType)sourceType {
     
     LXFPhotoConfig *config = [[LXFPhotoConfig alloc] init];
-    config.navBarTintColor = [UIColor blueColor];
+    config.navBarTintColor = [UIColor greenColor];
     config.navBarBgColor = [UIColor purpleColor];
     config.navBarTitleColor = [UIColor yellowColor];
     
